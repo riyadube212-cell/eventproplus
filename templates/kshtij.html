@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kshitij Singh | Portfolio</title>
+
+    <style>
+        /* Reset some default styles */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fffffe;
+            color: #050404;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: #411d1d;
+            color: white;
+            text-align: center;
+            padding: 30px 10px;
+        }
+        
+        header img {
+            width: 120px;
+            height: 120px;
+            border: 4px solid white;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        
+        header h1 {
+            font-size: 2em;
+            margin-top: 10px;
+        }
+        
+        header p {
+            font-size: 1.1em;
+        }
+        
+        section {
+            background-color: #ffffff;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 900px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+        }
+        
+        p,
+        li {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+        
+        ul,
+        ol {
+            padding-left: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        
+        table caption {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid #ccc;
+        }
+        
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+        
+        a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            background-color: #e0e0e0;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 30px;
+        }
+        
+        @media (max-width: 600px) {
+            header img {
+                width: 90px;
+                height: 90px;
+            }
+            section {
+                margin: 10px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="/static/images/kshitij.jpeg" alt="Kshitij Singh">
+        <h1>Kshitij Singh</h1>
+        <p>BCA/MCA | Web Developer | Programmer</p>
+    </header>
+
+    <section class="about" style="box-shadow: 1px 1px 10px rgb(109, 15, 16);">
+        <h2>About Me</h2>
+        <p>
+            A highly organized and hard-working individual looking for a responsible position to gain experience and also use my interpersonal skills to achieve the goals of a company. I aim to make a significant contribution to the success of the company, share
+            my ideas, and be mentored toward a successful career.
+        </p>
+    </section>
+
+    <section class="academics" style="box-shadow: 1px 1px 10px rgb(109, 15, 16);">
+        <h2 style="text-align: center; font-family:Verdana, Geneva, Tahoma, sans-serif;">Academic Scores</h2>
+        <table>
+            <tr>
+                <th>Qualification</th>
+                <th>Percentage</th>
+            </tr>
+            <tr>
+                <td>10th</td>
+                <td>80%</td>
+            </tr>
+            <tr>
+                <td>12th</td>
+                <td>65%</td>
+            </tr>
+            <tr>
+                <td>BCA</td>
+                <td>70%</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="skills" style="box-shadow: 1px 1px 10px rgb(109, 15, 16);">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>Python</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>C/C++</li>
+        </ul>
+    </section>
+
+    <section class="personal-skills" style="box-shadow: 1px 1px 10px rgb(109, 15, 16);">
+        <h2>Personal Skills & Strengths</h2>
+        <ol>
+            <li>Teamwork</li>
+            <li>Decision-Making Skills</li>
+            <li>Management/Planning Skills</li>
+            <li>Interpersonal Skills</li>
+        </ol>
+    </section>
+
+    <section class="contact" style="box-shadow: 1px 1px 10px rgb(109, 15, 16);">
+        <h2>Contact</h2>
+        <p>Phone: 7018979010</p>
+        <p>Email: <a href="mailto:kshitijsingh26jan@gmail.com">kshitijsingh26jan@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/kshitij-singh-9b68742bb" target="_blank">linkedin.com/in/Kshitij-singh</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/kshitij_rajput_01" target="_blank">instagram.com/kshitij_rajput_01</a></p>
+    </section>
+
+    <section style="box-shadow: 1px 1px 10px rgb(109, 15, 16);">
+        <div>
+            <h2>Visitor Registration 📝</h2>
+            <br>
+            <form action="/submit-form" method="post" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required style="width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ccc;"><br><br>
+
+                <label>Gender:</label><br>
+                <div style="margin-top: 5px; margin-bottom: 15px;">
+                    <label><input type="radio" name="gender" value="Male" required> Male</label>&nbsp;&nbsp;
+                    <label><input type="radio" name="gender" value="Female" required> Female</label>&nbsp;&nbsp;
+                    <label><input type="radio" name="gender" value="Other" required> Other</label>
+                </div>
+
+                <label for="email">Email ID:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required style="width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ccc;"><br><br>
+
+                <label for="mobile">Mobile Number:</label><br>
+                <input type="tel" id="mobile" name="mobile" placeholder="Enter your 10-digit number" pattern="[0-9]{10}" required style="width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ccc;"><br><br>
+
+                <button type="submit" style="height: 40px; width: 120px; font-weight: bold; border-radius: 50px; background-color: #d9dadc; color: #101212; box-shadow: 1px 1px 3px black; cursor: pointer;">
+                    SUBMIT
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <section style="box-shadow: 1px 1px 10px rgb(109, 15, 16);">
+        <div>
+            <h2>Service Request Form ⚙</h2>
+            <br>
+            <form action="/service-request" method="post" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+
+                <label for="visitorName">Visitor Name:</label><br>
+                <input type="text" id="visitorName" name="visitorName" placeholder="Enter your name" required style="width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ccc;"><br><br>
+
+                <label for="serviceType">Service Type:</label><br>
+                <select id="serviceType" name="serviceType" required style="width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
+                    <option value="">-- Select Service --</option>
+                    <option value="Web Design">Web Design</option>
+                    <option value="App Development">App Development</option>
+                    <option value="Software Installation">Software Installation</option>
+                    <option value="Technical Support">Technical Support</option>
+                    <option value="Other">Other</option>
+                </select><br><br>
+
+                <label for="description">Description:</label><br>
+                <textarea id="description" name="description" rows="5" placeholder="Describe the service you need..." style="width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ccc;" required></textarea><br><br>
+
+                <label for="contact">Contact Details:</label><br>
+                <input type="tel" id="contact" name="contact" placeholder="Enter your phone number" pattern="[0-9]{10}" required style="width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ccc;"><br><br>
+
+                <button type="submit" style="height: 40px; width: 150px; font-weight: bold; border-radius: 50px; background-color: #d9dadc; color: #101212; box-shadow: 1px 1px 3px black; cursor: pointer;">
+                    SEND REQUEST
+                </button>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
